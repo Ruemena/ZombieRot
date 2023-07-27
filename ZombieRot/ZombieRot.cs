@@ -41,6 +41,8 @@
             Exiled.Events.Handlers.Player.ChangingRole -= playerHandler.OnChangingRole;
             Exiled.Events.Handlers.Player.Left -= playerHandler.OnLeft;
 
+            Instance.rotHandler?.ClearZombieTickers();
+
             serverHandler = null;
             playerHandler = null;
             rotHandler = null;
